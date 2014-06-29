@@ -1,14 +1,1 @@
----
-
-layout:default
-title:我的bolg
----
-
-<h2>{{page.title}}</h2>
-<p>最新章</p>
-<ul>
-	{% for post int site.posts %}
-		<li>{{post.date | date_to_string }}<a href="{{site.baseurl}}{{
-		post.url }}">{{post.title}}</a></li>
-	{% endfor %}
-</ul>
+jekyll_demo
