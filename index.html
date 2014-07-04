@@ -1,5 +1,4 @@
-
----
+﻿---
 layout:default
 title:我的blog
 ---
@@ -9,8 +8,7 @@ title:我的blog
 	{% for post in site.posts %}
 	<li>
 		{{ post.date | date_to_string }}
-		<a href="{{ site.baseurl }}{{ post.url}}">
-		{{ post.date }} </a>
-		</li>
+		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.date }} </a>
+	</li>
 	{% endfor %}
 </ul>
